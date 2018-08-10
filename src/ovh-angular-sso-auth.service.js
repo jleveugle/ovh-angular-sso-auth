@@ -395,7 +395,7 @@ export default function () {
         };
     };
 
-    this.$get = function ($q, $timeout, $location, $window, $cookies) {
+    this.$get = /* @ngInject */ function ($q, $timeout, $location, $window, $cookies) {
         return new Authentication($q, $timeout, $location, $window, $cookies);
     };
 };
