@@ -6,7 +6,7 @@
  * Authentication interceptor for SSO
  *
  */
-export default function ($q, ssoAuthentication) {
+export default /* @ngInject */ function ($q, ssoAuthentication) {
     "use strict";
     return {
         /**
